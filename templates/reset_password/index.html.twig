@@ -3,6 +3,7 @@
 {% block title %}Mot de passe oublié{% endblock %}
 
 {% block body %}
+    <div class="block-mail">
     <form method="post">
         <h1 class="h3 mb-3 font-weight-normal">Réinitialiser mon mot de passe</h1>
         <label for="inputEmail">Votre Email</label>
@@ -14,4 +15,5 @@
         <hr>
         <p class="text-center">Ou souhaitez vous <a href="{{ path('app_login') }}">vous connecter</a> </p>
     </form>
+    </div>
 {% endblock %}

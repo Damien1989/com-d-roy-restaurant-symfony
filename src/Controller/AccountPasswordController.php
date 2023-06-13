@@ -18,7 +18,6 @@ class AccountPasswordController extends AbstractController
         $this->entityManager = $entityManager;
     }
 
-
     #[Route('/compte/modifier-mot-de-passe', name: 'app_account_password')]
     public function index(Request $request, UserPasswordHasherInterface $hasher): Response
     {

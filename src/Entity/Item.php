@@ -34,7 +34,7 @@ class Item
     #[ORM\ManyToMany(targetEntity: Category::class, mappedBy: 'item')]
     private Collection $categories;
 
-    #[ORM\Column(length: 50, nullable: true)]
+    #[ORM\Column(length: 150, nullable: true)]
     private ?string $slug = null;
 
     #[ORM\Column(type: Types::DECIMAL, precision: 4, scale: 2)]
